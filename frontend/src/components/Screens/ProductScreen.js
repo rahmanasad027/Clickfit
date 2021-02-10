@@ -8,10 +8,10 @@ export default function ProductScreen(props) {
   if (!product) {
     return <div> Product Not Found</div>;
   }
- 
+
   return (
     <div>
-      <Link  to="/product\:id">Back to result</Link>
+      <Link to="/"><button>Back to result</button></Link>
       <div className="row top">
         <div className="col-2">
           <img className="large" src={product.image} alt={product.name}></img>
@@ -50,8 +50,8 @@ export default function ProductScreen(props) {
                     {product.countInStock > 0 ? (
                       <span className="success">In Stock</span>
                     ) : (
-                      <span className="error">Unavailable</span>
-                    )}
+                        <span className="error">Unavailable</span>
+                      )}
                   </div>
                 </div>
               </li>
