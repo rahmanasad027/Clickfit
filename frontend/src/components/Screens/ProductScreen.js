@@ -12,9 +12,13 @@ export default function ProductScreen(props) {
   if (!product) {
     return <div> Product Not Found</div>;
   }
+<<<<<<< HEAD
   const addToCartHandler = () => {
     props.history.push(`/cart/${productId}?qty=${qty}`);
   };
+=======
+
+>>>>>>> f8605d5bed583f95a9ff664c9fd33a727fc4001c
   return (
     <div>
       <Link to="/"><button>Back to result</button></Link>

@@ -2,7 +2,9 @@
 import React from 'react';
 // import Product from './components/products';
 // import data from './data';
+
 import CartScreen from './components/Screens/CartScreen';
+
 import ProductScreen from './components/Screens/ProductScreen';
 import HomeScreen from './components/Screens/HomeScreen';
 import { BrowserRouter, Route, Link } from "react-router-dom";
@@ -25,7 +27,9 @@ function App() {
           </div>
         </header>
         <main>
+
         <Route path="/cart/:id?" component={CartScreen}></Route>
+
           <Route path="/" component={HomeScreen} exact />
           <Route path="/product/:id" component={ProductScreen} />
           {/* <div>
